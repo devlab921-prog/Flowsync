@@ -1,73 +1,186 @@
-# React + TypeScript + Vite
+# 🚀 FlowSync
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FlowSync** es una landing page moderna para una plataforma orientada a mejorar la gestión de procesos, productividad y eficiencia de equipos.
 
-Currently, two official plugins are available:
+El proyecto presenta de forma clara la propuesta de valor de la plataforma, su funcionamiento, beneficios, planes, testimonios y preguntas frecuentes, utilizando una interfaz moderna, responsive y basada en componentes reutilizables.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Características
 
-## React Compiler
+* 🎯 Hero section con propuesta de valor y llamada a la acción.
+* ⚡ Sección enfocada en eficiencia y productividad.
+* 🔄 Explicación de cómo funciona la plataforma.
+* 💬 Testimonios de usuarios.
+* 💳 Sección de planes y precios.
+* ❓ Preguntas frecuentes (FAQ).
+* 📱 Diseño responsive para diferentes dispositivos.
+* 🧩 Componentes reutilizables y organizados por secciones.
+* 🚀 Preparado para despliegue en producción.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+* **React** — Desarrollo de la interfaz de usuario.
+* **TypeScript** — Tipado estático y mayor seguridad durante el desarrollo.
+* **Vite** — Entorno de desarrollo y herramienta de build.
+* **CSS** — Estilos y diseño responsive.
+* **ESLint** — Análisis y calidad del código.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Estructura del proyecto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+FlowSync/
+├── public/
+│   └── rocket-svgrepo-com.svg
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── componets/
+│   │   ├── EfficiencySection.tsx
+│   │   ├── FAQSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── HowItWorksSection.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── PricingSection.tsx
+│   │   └── TestimonialsSection.tsx
+│   │
+│   ├── data/
+│   │
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│
+├── index.html
+├── eslint.config.js
+├── package.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Instalación
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clona el repositorio:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <https://github.com/devlab921-prog/Flowsync.git>
 ```
+
+Ingresa al directorio del proyecto:
+
+```bash
+cd FlowSync
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en la URL proporcionada por Vite, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## 📦 Scripts disponibles
+
+### Desarrollo
+
+```bash
+npm run dev
+```
+
+Inicia el servidor de desarrollo con Vite.
+
+### Build
+
+```bash
+npm run build
+```
+
+Genera la versión optimizada de la aplicación para producción.
+
+### Preview
+
+```bash
+npm run preview
+```
+
+Permite visualizar localmente la versión generada para producción.
+
+### Lint
+
+```bash
+npm run lint
+```
+
+Ejecuta ESLint para detectar problemas y mantener la calidad del código.
+
+## 🖥️ Secciones principales
+
+### Hero
+
+Presenta la propuesta de valor de FlowSync y dirige al usuario hacia las principales llamadas a la acción.
+
+### Efficiency
+
+Muestra los beneficios de utilizar la plataforma para mejorar la eficiencia y productividad.
+
+### How It Works
+
+Explica de manera sencilla el funcionamiento de FlowSync y el proceso que seguiría un usuario.
+
+### Pricing
+
+Presenta los diferentes planes disponibles y sus características.
+
+### Testimonials
+
+Muestra experiencias y opiniones de usuarios para reforzar la propuesta de valor del producto.
+
+### FAQ
+
+Responde las preguntas más frecuentes de los usuarios.
+
+## 📱 Responsive Design
+
+La interfaz está diseñada para ofrecer una experiencia consistente en diferentes tamaños de pantalla:
+
+* 💻 Desktop
+* 📱 Mobile
+* 📟 Tablet
+
+## 🎯 Objetivo del proyecto
+
+El objetivo de **FlowSync** es desarrollar una landing page moderna y profesional para presentar un producto digital de manera clara, destacando sus funcionalidades, beneficios y propuesta de valor.
+
+El proyecto también sirve como demostración de buenas prácticas en el desarrollo de interfaces con **React y TypeScript**, utilizando una estructura basada en componentes reutilizables.
+
+## 🌐 Demo
+
+**Live Demo:** [https://flowsync-pearl.vercel.app/]
+
+## 📌 Repositorio
+
+**GitHub:** [https://github.com/devlab921-prog/Flowsync.git]
+
+## 👨‍💻 Autor
+
+**Gino Anderson Moreno Bejarano**
+
+Desarrollador Full Stack Junior
+Java · Spring Boot · React · Node.js
+
+---
+
+⭐ Si este proyecto te resulta interesante, puedes explorar el código fuente y la demo para conocer más sobre su implementación.
